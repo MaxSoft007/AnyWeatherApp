@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  
+	android:gravity="center_vertical" 
+	android:background="@layout/weather_toast_bg"   
+	android:layout_width="fill_parent"  
+	android:layout_height="fill_parent"
+    >
+
+    <ImageView
+        android:id="@+id/toast_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:minWidth="200dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/toast_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/toast_img"
+        android:layout_alignTop="@+id/toast_img"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:maxHeight="65dp"
+        android:maxWidth="140dp"
+        android:minHeight="65dp"
+        android:minWidth="140dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/toast_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toast_img"
+        android:layout_alignLeft="@+id/toast_img"
+        android:layout_alignRight="@+id/toast_img"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxHeight="25dp"
+        android:maxWidth="200dp"
+        android:minHeight="25dp"
+        android:minWidth="200dp"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

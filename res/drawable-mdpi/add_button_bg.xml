@@ -1,0 +1,94 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Non focused states -->
+    <item android:state_focused="false" 
+          android:state_selected="false" 
+          android:state_pressed="false"
+          android:drawable="@drawable/add_bg" />
+    <item android:state_focused="false" 
+          android:state_selected="true" 
+          android:state_pressed="false" 
+          android:drawable="@drawable/add_bg" />
+    <!-- Focused states -->
+    <item android:state_focused="true" 
+          android:state_selected="false" 
+          android:state_pressed="false" 
+          android:drawable="@drawable/add_bg_fp" />
+    <item android:state_focused="true" 
+          android:state_selected="true" 
+          android:state_pressed="false" 
+          android:drawable="@drawable/add_bg_fp" />
+    <!-- Pressed -->
+    <item android:state_pressed="true" 
+          android:drawable="@drawable/add_bg_fp" />
+
+    <!-- 
+    <item android:state_pressed="true" android:drawable="@drawable/add_bg">  
+        <shape>  
+    -->
+            <!-- 渐变 
+            <gradient  
+                android:startColor="#076ea9"  
+                android:endColor="#ffffff"  
+                android:type="radial"  
+                android:gradientRadius="50" />  
+            -->  
+            <!-- 描边 
+            <stroke  
+                android:width="2dp"  
+                android:color="#dcdcdc"  
+                android:dashWidth="5dp"   
+                android:dashGap="3dp" />  
+            -->  
+            <!-- 圆角
+            <corners  
+                android:radius="2dp" />  
+            <padding  
+                android:left="10dp"  
+                android:top="10dp"  
+                android:right="10dp"  
+                android:bottom="10dp" />  
+        </shape>  
+    </item>  
+  
+    <item android:state_focused="true" 
+          android:drawable="@drawable/add_bg"
+        >  
+        <shape>  
+            <gradient  
+                android:startColor="#076ea9"  
+                android:endColor="#076ea9"  
+                android:angle="270" />  
+            <stroke  
+                android:width="2dp"  
+                android:color="#dcdcdc" />  
+            <corners  
+                android:radius="2dp" />  
+            <padding  
+                android:left="10dp"  
+                android:top="10dp"  
+                android:right="10dp"  
+                android:bottom="10dp" />  
+        </shape>  
+    </item>  
+  
+    <item android:drawable="@drawable/add_bg">         
+        <shape>  
+            <solid android:color="#076ea9"/>  
+            <stroke  
+                android:width="2dp"  
+                android:color="#fad3cf" />  
+            <corners   
+                android:topRightRadius="5dp"  
+                android:bottomLeftRadius="5dp"  
+                android:topLeftRadius="0dp"  
+                android:bottomRightRadius="0dp"  
+            />  
+            <padding  
+                android:left="10dp"  
+                android:top="10dp"  
+                android:right="10dp"  
+                android:bottom="10dp" />  
+        </shape>  
+    </item>  
+             -->  
+</selector>  

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnyWeather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<!-- 生活指数标题 -->
+	<string name="dress_title"><Data><![CDATA[穿衣指数 ]]></Data></string> 
+	<string name="makeup_title"><Data><![CDATA[化妆指数]]></Data></string> 
+	<string name="cold_title"><Data><![CDATA[感冒指数]]></Data></string> 
+	<string name="sport_title"><Data><![CDATA[运动指数]]></Data></string> 
+	<string name="carwash_title"><Data><![CDATA[洗车指数]]></Data></string> 
+	<string name="travel_title"><Data><![CDATA[旅游指数]]></Data></string> 
+	<string name="glass_title"><Data><![CDATA[太阳镜指数]]></Data></string> 
+	<string name="uv_title"><Data><![CDATA[紫外线指数]]></Data></string> 
+	<string name="comfort_title"><Data><![CDATA[舒适度指数]]></Data></string> 
+	
+	<string name="quit_tip">您确定要退出系统吗？</string>
+	<string name="quit_title">温馨提示</string>
+	<string name="quit_yes">确  定</string>
+	<string name="quit_no">取  消</string>
+	
+	<string name="air_condition_title"><Data><![CDATA[空调指数]]></Data></string> 
+	<string name="irritability_title"><Data><![CDATA[过敏指数]]></Data></string> 
+	<string name="bathing_beach_title"><Data><![CDATA[海滨浴场指数]]></Data></string> 
+	<string name="morning_exercise_title"><Data><![CDATA[晨练指数]]></Data></string> 
+	<string name="go_fishing_title"><Data><![CDATA[钓鱼指数]]></Data></string> 
+	<string name="sunscreen_title"><Data><![CDATA[防晒指数]]></Data></string> 
+	<string name="go_window_shopping_title"><Data><![CDATA[逛街指数]]></Data></string> 
+	<string name="dry_title"><Data><![CDATA[干燥指数]]></Data></string> 
+	<string name="go_boating_title"><Data><![CDATA[划船指数]]></Data></string> 
+	<string name="traffic_title"><Data><![CDATA[交通指数]]></Data></string> 
+	<string name="road_condition_title"><Data><![CDATA[路况指数]]></Data></string> 
+	<string name="sun_cure_title"><Data><![CDATA[晾晒指数]]></Data></string> 
+	<string name="hairdressing_title"><Data><![CDATA[美发指数]]></Data></string> 
+	<string name="night_life_title"><Data><![CDATA[夜生活指数]]></Data></string> 
+	<string name="beer_title"><Data><![CDATA[啤酒指数]]></Data></string> 
+	<string name="fly_a_kite_title"><Data><![CDATA[放风筝指数]]></Data></string> 
+	<string name="air_pollutant_diffusion_title"><Data><![CDATA[空气污染扩散指数]]></Data></string> 
+	<string name="environment_protection_title"><Data><![CDATA[环境污染防护指数]]></Data></string> 
+	<string name="tip_title"><Data><![CDATA[提示指数]]></Data></string> 
+	<string name="mood_title"><Data><![CDATA[心情指数]]></Data></string> 
+	<string name="appointment_title"><Data><![CDATA[约会指数]]></Data></string> 
+	<string name="umbrella_title"><Data><![CDATA[雨伞指数]]></Data></string> 
+	<string name="heatstroke_title"><Data><![CDATA[中暑指数]]></Data></string> 
+	
+	
+	<string name="share_action"><Data><![CDATA[选择分享类型]]></Data></string> 
+	<string name="share_title"><Data><![CDATA[共享软件]]></Data></string> 
+	<string name="share_contnet"><Data><![CDATA[Hi,我是MaxSoft,欢迎您下载我的共享版软件【任意天气】http://www.maxsoft.org 后续更精彩...]]></Data></string> 
+
+	<string name="wait_conternt"><Data><![CDATA[正在更新 ... ]]></Data></string>
+	<string name="open_network_tip"><Data><![CDATA[小意监测到您的网络不可用，将无法实时更新天气信息...]]></Data></string>
+	
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".HomeActivity" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="360dp"
+        android:minWidth="360dp"
+        android:maxHeight="80dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/foot" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:height="80dp" >
+
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:clickable="true"
+        	android:layout_gravity="center_vertical"
+        	android:adjustViewBounds="true"
+	        android:maxWidth="35dp"
+	        android:minWidth="35dp"
+	        android:scaleType="centerInside"
+        	android:src="@drawable/mex"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:clickable="true"
+        	android:layout_gravity="center_vertical"
+        	android:layout_marginLeft="50dp"
+        	android:adjustViewBounds="true"
+	        android:maxWidth="35dp"
+	        android:minWidth="35dp"
+	        android:scaleType="centerInside"
+        	android:src="@drawable/newsx"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:clickable="true"
+        	android:layout_gravity="center_vertical"
+        	android:layout_marginLeft="50dp"
+        	android:adjustViewBounds="true"
+	        android:maxWidth="35dp"
+	        android:minWidth="35dp"
+	        android:scaleType="centerInside"
+        	android:src="@drawable/locationx"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:clickable="true"
+        	android:layout_gravity="center_vertical"
+        	android:layout_marginLeft="50dp"
+        	android:adjustViewBounds="true"
+	        android:maxWidth="35dp"
+	        android:minWidth="35dp"
+	        android:scaleType="centerInside"
+        	android:src="@drawable/setx"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:width="360dp"
+        android:height="45dp"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:fontFamily="微软雅黑"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#076ea9"
+     />
+
+    <ImageView
+        android:id="@+id/web_client_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:maxHeight="25dp"
+        android:maxWidth="25dp"
+         />
+    
+</RelativeLayout>

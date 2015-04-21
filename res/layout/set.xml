@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:id="@+id/set_r">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#076ea9"
+        android:fontFamily="微软雅黑"
+        android:gravity="center_vertical|center_horizontal"
+        android:height="45dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:width="360dp" />
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/city"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/page_title"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="城 市："
+        android:textColor="#076ea9"
+        android:textSize="16dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_title"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/city_name"
+        android:background="@null"
+        android:completionThreshold="1"
+        android:dropDownSelector="@layout/drop_list_bg"
+        android:dropDownVerticalOffset="1dp"
+        android:layerType="none"
+        android:layout_marginLeft="3dp"
+        android:maxHeight="27dp"
+        android:maxWidth="150dp"
+        android:minHeight="27dp"
+        android:minWidth="150dp"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="1dp"
+        android:singleLine="true">
+    </AutoCompleteTextView>
+
+    <ImageView
+        android:id="@+id/under_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_alignLeft="@+id/city"
+        android:src="@drawable/line" 
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:minWidth="150dp"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        />
+
+    <ImageView
+        android:id="@+id/add_button_name_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/under_line"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="28dp"
+        android:minHeight="28dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/add_button_bg"/>
+
+    <TextView
+        android:id="@+id/add_button_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_button_name_bg"
+        android:layout_alignLeft="@+id/add_button_name_bg"
+        android:layout_alignRight="@+id/add_button_name_bg"
+        android:layout_alignTop="@+id/city"
+        android:text="+ 增 加"
+        android:textSize="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#076ea9"/>
+
+    <ImageView
+        android:id="@+id/separator_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/under_line"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxHeight="1dp"
+        android:maxWidth="360dp"
+        android:minHeight="1dp"
+        android:minWidth="360dp"
+        android:src="@drawable/line_sp" />
+
+     <TextView
+         android:id="@+id/hot_city"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/shanghai_bg"
+         android:layout_below="@+id/under_line"
+         android:layout_toLeftOf="@+id/chongqing"
+         android:gravity="center_vertical|center_horizontal"
+         android:height="30dp"
+         android:text="热 门 城 市"
+         android:textColor="#076ea9"
+         android:textSize="14dp"
+         android:textStyle="bold"
+         android:width="80dp" />  
+  
+<!-- 第一栏 -->
+    <ImageView
+        android:id="@+id/beijing_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignLeft="@+id/separator_line"
+        android:layout_below="@+id/separator_line"
+        android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/beijing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/beijing_bg"
+         android:layout_alignLeft="@+id/beijing_bg"
+         android:layout_alignRight="@+id/beijing_bg"
+         android:layout_alignTop="@+id/beijing_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="北 京"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/tianjin_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/beijing_bg"
+         android:layout_toRightOf="@+id/beijing_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/tianjin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/tianjin_bg"
+         android:layout_alignLeft="@+id/tianjin_bg"
+         android:layout_alignRight="@+id/tianjin_bg"
+         android:layout_alignTop="@+id/tianjin_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="天 津"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+          
+     <ImageView
+         android:id="@+id/shanghai_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/beijing_bg"
+         android:layout_toRightOf="@+id/tianjin_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/shanghai"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/shanghai_bg"
+         android:layout_alignLeft="@+id/shanghai_bg"
+         android:layout_alignRight="@+id/shanghai_bg"
+         android:layout_alignTop="@+id/shanghai_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="上 海"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/chongqing_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/beijing_bg"
+         android:layout_toRightOf="@+id/shanghai_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/chongqing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/chongqing_bg"
+         android:layout_alignLeft="@+id/chongqing_bg"
+         android:layout_alignRight="@+id/chongqing_bg"
+         android:layout_alignTop="@+id/chongqing_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="重 庆"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />    
+
+     <ImageView
+         android:id="@+id/shenzhen_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/beijing_bg"
+         android:layout_toRightOf="@+id/chongqing_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+
+     <TextView
+         android:id="@+id/shenzhen"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/shenzhen_bg"
+         android:layout_alignLeft="@+id/shenzhen_bg"
+         android:layout_alignRight="@+id/shenzhen_bg"
+         android:layout_alignTop="@+id/shenzhen_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="深 圳"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+<!-- 第二栏 -->
+    <ImageView
+        android:id="@+id/guangzhou_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/beijing_bg"
+        android:layout_below="@+id/beijing_bg"
+        android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/guangzhou"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/guangzhou_bg"
+         android:layout_alignLeft="@+id/guangzhou_bg"
+         android:layout_alignRight="@+id/guangzhou_bg"
+         android:layout_alignTop="@+id/guangzhou_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="广 州"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/nanjing_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/guangzhou_bg"
+         android:layout_toRightOf="@+id/guangzhou_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/nanjing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/nanjing_bg"
+         android:layout_alignLeft="@+id/nanjing_bg"
+         android:layout_alignRight="@+id/nanjing_bg"
+         android:layout_alignTop="@+id/nanjing_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="南 京"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+          
+     <ImageView
+         android:id="@+id/hangzhou_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/guangzhou_bg"
+         android:layout_toRightOf="@+id/nanjing_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/hangzhou"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/hangzhou_bg"
+         android:layout_alignLeft="@+id/hangzhou_bg"
+         android:layout_alignRight="@+id/hangzhou_bg"
+         android:layout_alignTop="@+id/hangzhou_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="杭 州"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/chengdu_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/guangzhou_bg"
+         android:layout_toRightOf="@+id/hangzhou_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/chengdu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/chengdu_bg"
+         android:layout_alignLeft="@+id/chengdu_bg"
+         android:layout_alignRight="@+id/chengdu_bg"
+         android:layout_alignTop="@+id/chengdu_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="成 都"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />    
+
+     <ImageView
+         android:id="@+id/wuhan_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/guangzhou_bg"
+         android:layout_toRightOf="@+id/chengdu_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/wuhan"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/wuhan_bg"
+         android:layout_alignLeft="@+id/wuhan_bg"
+         android:layout_alignRight="@+id/wuhan_bg"
+         android:layout_alignTop="@+id/wuhan_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="武 汉"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />     
+
+<!-- 第三栏 -->
+    <ImageView
+        android:id="@+id/shenyang_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/beijing_bg"
+        android:layout_below="@+id/guangzhou_bg"
+        android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/shenyang"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/shenyang_bg"
+         android:layout_alignLeft="@+id/shenyang_bg"
+         android:layout_alignRight="@+id/shenyang_bg"
+         android:layout_alignTop="@+id/shenyang_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="沈 阳"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/xian_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/shenyang_bg"
+         android:layout_toRightOf="@+id/shenyang_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/xian"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/xian_bg"
+         android:layout_alignLeft="@+id/xian_bg"
+         android:layout_alignRight="@+id/xian_bg"
+         android:layout_alignTop="@+id/xian_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="西 安"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+          
+     <ImageView
+         android:id="@+id/dalian_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/shenyang_bg"
+         android:layout_toRightOf="@+id/xian_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/dalian"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/dalian_bg"
+         android:layout_alignLeft="@+id/dalian_bg"
+         android:layout_alignRight="@+id/dalian_bg"
+         android:layout_alignTop="@+id/dalian_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="大 连"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/qingdao_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/shenyang_bg"
+         android:layout_toRightOf="@+id/dalian_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/qingdao"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/qingdao_bg"
+         android:layout_alignLeft="@+id/qingdao_bg"
+         android:layout_alignRight="@+id/qingdao_bg"
+         android:layout_alignTop="@+id/qingdao_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="青 岛"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />    
+
+     <ImageView
+         android:id="@+id/suzhou_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/shenyang_bg"
+         android:layout_toRightOf="@+id/qingdao_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/suzhou"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/suzhou_bg"
+         android:layout_alignLeft="@+id/suzhou_bg"
+         android:layout_alignRight="@+id/suzhou_bg"
+         android:layout_alignTop="@+id/suzhou_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="苏 州"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />          
+
+<!-- 第四栏 -->
+    <ImageView
+        android:id="@+id/ningbo_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/beijing_bg"
+        android:layout_below="@+id/shenyang_bg"
+        android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/ningbo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/ningbo_bg"
+         android:layout_alignLeft="@+id/ningbo_bg"
+         android:layout_alignRight="@+id/ningbo_bg"
+         android:layout_alignTop="@+id/ningbo_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="宁 波"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/wuxi_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/ningbo_bg"
+         android:layout_toRightOf="@+id/ningbo_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/wuxi"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/wuxi_bg"
+         android:layout_alignLeft="@+id/wuxi_bg"
+         android:layout_alignRight="@+id/wuxi_bg"
+         android:layout_alignTop="@+id/wuxi_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="无 锡"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+          
+     <ImageView
+         android:id="@+id/xianggang_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/ningbo_bg"
+         android:layout_toRightOf="@+id/wuxi_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/xianggang"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/xianggang_bg"
+         android:layout_alignLeft="@+id/xianggang_bg"
+         android:layout_alignRight="@+id/xianggang_bg"
+         android:layout_alignTop="@+id/xianggang_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="香 港"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+     
+     <ImageView
+         android:id="@+id/aomen_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/ningbo_bg"
+         android:layout_toRightOf="@+id/xianggang_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />  
+     <TextView
+         android:id="@+id/aomen"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/aomen_bg"
+         android:layout_alignLeft="@+id/aomen_bg"
+         android:layout_alignRight="@+id/aomen_bg"
+         android:layout_alignTop="@+id/aomen_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="澳 门"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />    
+
+     <ImageView
+         android:id="@+id/xiamen_bg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/ningbo_bg"
+         android:layout_toRightOf="@+id/aomen_bg"
+         android:layout_marginLeft="10dp"
+         android:adjustViewBounds="true"
+         android:maxWidth="60dp"
+         android:minWidth="60dp"
+         android:background="@drawable/add_button_bg" />
+     <TextView
+         android:id="@+id/xiamen"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/xiamen_bg"
+         android:layout_alignLeft="@+id/xiamen_bg"
+         android:layout_alignRight="@+id/xiamen_bg"
+         android:layout_alignTop="@+id/xiamen_bg"
+         android:gravity="center_horizontal|center_vertical"
+         android:text="厦 门"
+         android:textColor="#076ea9"
+         android:textSize="14dp" />
+
+     <ImageView
+         android:id="@+id/hot_city_end"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/ningbo_bg"
+         android:layout_marginTop="25dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:maxHeight="1dp"
+         android:maxWidth="360dp"
+         android:minHeight="1dp"
+         android:minWidth="360dp"
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/line_sp" />
+
+     <ListView
+         android:id="@+id/already_set_list_view"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/hot_city_end"
+         android:layout_alignRight="@+id/hot_city_end"
+         android:layout_below="@+id/hot_city_end"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="168dp" >
+
+     </ListView>
+
+     <TextView
+         android:id="@+id/focus_city"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/xianggang_bg"
+         android:layout_marginTop="12dp"
+         android:layout_toLeftOf="@+id/aomen"
+         android:gravity="center_vertical|center_horizontal"
+         android:height="30dp"
+         android:text="关 注 城 市"
+         android:textColor="#076ea9"
+         android:textSize="14dp"
+         android:textStyle="bold"
+         android:width="80dp" />
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="150dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:src="@drawable/line_sp"  />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/imageView1"
+         android:layout_marginBottom="-15dp"
+         android:layout_alignRight="@+id/focus_city"
+         android:layout_toRightOf="@+id/wuxi_bg"
+         android:gravity="center_vertical|center_horizontal"
+         android:height="30dp"
+         android:text="当 前 位 置"
+         android:textColor="#076ea9"
+         android:textSize="14dp"
+         android:textStyle="bold"
+         android:width="80dp"/>
+
+     <TextView
+         android:id="@+id/location_info_city_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/imageView1"
+         android:layout_below="@+id/textView1"
+         android:layout_marginTop="5dp"
+         android:textColor="#076ea9"
+         android:textSize="14dp"
+         android:maxWidth="70dp"
+         android:minWidth="70dp"
+         android:text="城市：" />
+
+     <TextView
+         android:id="@+id/location_info_city_name_value"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/location_info_city_name"
+         android:layout_alignBottom="@+id/location_info_city_name"
+         android:layout_toRightOf="@+id/location_info_city_name"
+         android:textSize="14dp"
+         android:layout_marginLeft="2dp"
+         android:text="CCCCC"/>
+
+     <TextView
+         android:id="@+id/location_info_code_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/location_info_city_name"
+         android:layout_below="@+id/location_info_city_name_value"
+         android:layout_marginTop="5px"
+         android:maxWidth="70dp"
+         android:minWidth="70dp"
+         android:text="行政区域："
+         android:textSize="14dp"
+         android:textColor="#076ea9" />
+
+     <TextView
+         android:id="@+id/location_info_code_name_value"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/location_info_code_name"
+         android:layout_alignBottom="@+id/location_info_code_name"
+         android:layout_toRightOf="@+id/location_info_city_name"
+         android:textSize="14dp"
+         android:layout_marginLeft="2dp"
+         android:text="BBBBB"/>
+
+     <TextView
+         android:id="@+id/location_info_sub_area_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/location_info_code_name"
+         android:layout_below="@+id/location_info_code_name"
+         android:layout_marginTop="5px"
+         android:text="子区域："
+         android:maxWidth="70dp"
+         android:minWidth="70dp"
+         android:textSize="14dp"
+         android:textColor="#076ea9" />
+     <TextView
+         android:id="@+id/location_info_sub_area_name_value"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/location_info_sub_area_name"
+         android:layout_alignBottom="@+id/location_info_sub_area_name"
+         android:layout_toRightOf="@+id/location_info_city_name"
+         android:layout_marginLeft="2dp"
+         android:textSize="14dp"
+         android:text="AAAAA"/>
+     
+     <TextView
+         android:id="@+id/location_info_address_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/location_info_code_name"
+         android:layout_below="@+id/location_info_sub_area_name"
+         android:layout_marginTop="5px"
+         android:text="地址："
+         android:maxWidth="70dp"
+         android:minWidth="70dp"
+         android:textSize="14dp"
+         android:textColor="#076ea9" />
+     <TextView
+         android:id="@+id/location_info_address_name_value"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/location_info_address_name"
+         android:layout_alignBottom="@+id/location_info_address_name"
+         android:layout_toRightOf="@+id/location_info_address_name"
+         android:layout_marginLeft="2dp"
+         android:textSize="14dp"
+         android:text="AAAAA"/>
+</RelativeLayout>

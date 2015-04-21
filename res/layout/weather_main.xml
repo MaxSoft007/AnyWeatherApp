@@ -1,0 +1,828 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:id="@+id/bar_text_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF" />
+    <!-- 当前气象信息 -->
+
+
+    <!-- 第一天气象信息 -->
+
+    <ImageView
+        android:id="@+id/first_day_weather_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/second_day_weather_content"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:minWidth="100dp"
+        android:scaleType="centerInside"
+        />
+    <!-- 第一天气象信息 日期 -->
+
+    <TextView
+        android:id="@+id/first_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/second_day_weather_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- 第一天气象信息 气象图标 -->
+
+    <ImageView
+        android:id="@+id/first_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/first_text_date"
+        android:layout_below="@+id/first_text_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- 第一天气象信息 风向信息 -->
+
+    <TextView
+        android:id="@+id/first_wind_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/first_text_date"
+        android:layout_below="@+id/first_weather_icon"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第一天气象信息 天气信息 -->
+
+    <TextView
+        android:id="@+id/first_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/first_weather_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/first_weather_icon"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第一天气象信息 温度信息 -->
+
+    <TextView
+        android:id="@+id/first_temperature_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/first_weather_info"
+        android:layout_below="@+id/first_weather_info"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第二天气象信息 -->
+
+    <ImageView
+        android:id="@+id/second_day_weather_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thirdly_day_weather_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:minWidth="100dp"
+        android:scaleType="centerInside"
+        />
+    <!-- 第二天气象信息 日期 -->
+
+    <TextView
+        android:id="@+id/second_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/first_weather_icon"
+        android:layout_alignLeft="@+id/first_day_weather_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- 第二天气象信息 气象图标 -->
+
+    <ImageView
+        android:id="@+id/second_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_text_date"
+        android:layout_below="@+id/second_text_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- 第二天气象信息 风向信息 -->
+
+    <TextView
+        android:id="@+id/second_wind_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_text_date"
+        android:layout_below="@+id/second_weather_icon"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第二天气象信息 天气信息 -->
+
+    <TextView
+        android:id="@+id/second_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/second_weather_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/second_weather_icon"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第二天气象信息 温度信息 -->
+
+    <TextView
+        android:id="@+id/second_temperature_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_weather_info"
+        android:layout_below="@+id/second_weather_info"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第三天气象信息 -->
+
+    <ImageView
+        android:id="@+id/thirdly_day_weather_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:minWidth="100dp"
+        android:scaleType="centerInside"
+        />
+    <!-- 第三天气象信息 日期 -->
+
+    <TextView
+        android:id="@+id/thirdly_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thirdly_day_weather_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- 第三天气象信息 气象图标 -->
+
+    <ImageView
+        android:id="@+id/thirdly_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thirdly_text_date"
+        android:layout_below="@+id/thirdly_text_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- 第三天气象信息 风向信息 -->
+
+    <TextView
+        android:id="@+id/thirdly_wind_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thirdly_text_date"
+        android:layout_below="@+id/thirdly_weather_icon"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第三天气象信息 天气信息 -->
+
+    <TextView
+        android:id="@+id/thirdly_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thirdly_weather_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/thirdly_weather_icon"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第三天气象信息 温度信息 -->
+
+    <TextView
+        android:id="@+id/thirdly_temperature_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thirdly_weather_info"
+        android:layout_below="@+id/thirdly_weather_info"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第四天气象信息 -->
+
+    <ImageView
+        android:id="@+id/fourthly_day_weather_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:maxWidth="180dp"
+        android:minWidth="100dp"
+        android:scaleType="centerInside"
+        />
+    <!-- 第四天气象信息 日期 -->
+
+    <TextView
+        android:id="@+id/fourthly_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/second_text_date"
+        android:layout_alignTop="@+id/thirdly_day_weather_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- 第四天气象信息 气象图标 -->
+
+    <ImageView
+        android:id="@+id/fourthly_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fourthly_text_date"
+        android:layout_below="@+id/fourthly_text_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp" />
+
+    <!-- 第四天气象信息 风向信息 -->
+
+    <TextView
+        android:id="@+id/fourthly_wind_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fourthly_text_date"
+        android:layout_below="@+id/fourthly_weather_icon"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第四天气象信息 天气信息 -->
+
+    <TextView
+        android:id="@+id/fourthly_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fourthly_weather_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/fourthly_weather_icon"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- 第四天气象信息 温度信息 -->
+
+    <TextView
+        android:id="@+id/fourthly_temperature_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fourthly_weather_info"
+        android:layout_below="@+id/fourthly_weather_info"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/today_weather_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="360dp"
+        android:minWidth="360dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/today_bg_1" />
+    
+	<ImageView
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/B"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+    
+    <ImageView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/C"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+    
+    <ImageView
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="5dp"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/C"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/F"
+        android:layout_toRightOf="@+id/A"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/E"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/E"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/I"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/F"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/I"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/I"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/H"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/H"
+        android:maxWidth="60dp"
+        android:minWidth="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/today_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:maxWidth="95dp"
+        android:minWidth="95dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"/>
+<!-- 生活指数标题 start -->    
+    <TextView
+        android:id="@+id/dress_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/A"
+        android:layout_alignRight="@+id/A"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:height="14dp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/make_up_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/F"
+        android:layout_toRightOf="@+id/A"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:height="14dp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/cold_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/make_up_index"
+        android:layout_alignBottom="@+id/make_up_index"
+        android:layout_toRightOf="@+id/B"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:height="14dp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/sport_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/D"
+        android:layout_alignLeft="@+id/D"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:height="14dp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/car_wash_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sport_index"
+        android:layout_alignBottom="@+id/sport_index"
+        android:layout_alignLeft="@+id/E"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:height="14dp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/travel_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/car_wash_index"
+        android:layout_alignBottom="@+id/car_wash_index"
+        android:layout_toRightOf="@+id/H"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:height="14dp"
+        android:textSize="10sp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/glass_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/G"
+        android:layout_alignLeft="@+id/G"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:height="14dp"
+        android:textSize="10sp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/uv_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/glass_index"
+        android:layout_alignBottom="@+id/glass_index"
+        android:layout_alignLeft="@+id/H"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:height="14dp"
+        android:textSize="10sp"
+        android:width="60dp" />
+
+    <TextView
+        android:id="@+id/comfort_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uv_index"
+        android:layout_alignBottom="@+id/uv_index"
+        android:layout_alignLeft="@+id/I"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:height="14dp"
+        android:textSize="10sp"
+        android:width="60dp" />
+<!-- 生活指数标题 end -->
+<!-- 生活指数Tip start -->
+    <TextView
+        android:id="@+id/dress_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dress_index"
+        android:layout_above="@+id/dress_index"
+        android:layout_marginLeft="25dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/make_up_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/make_up_index"
+        android:layout_above="@+id/make_up_index"
+        android:layout_marginLeft="23dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/cold_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cold_index"
+        android:layout_above="@+id/cold_index"
+        android:layout_marginLeft="25dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sport_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sport_index"
+        android:layout_above="@+id/sport_index"
+        android:layout_marginLeft="23dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/car_wash_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/car_wash_index"
+        android:layout_above="@+id/car_wash_index"
+        android:layout_marginLeft="25dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/travel_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/travel_index"
+        android:layout_above="@+id/travel_index"
+        android:layout_marginLeft="25dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/glass_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/glass_index"
+        android:layout_above="@+id/glass_index"
+        android:layout_marginLeft="28dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/uv_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uv_index"
+        android:layout_above="@+id/uv_index"
+        android:layout_marginLeft="27dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/comfort_index_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comfort_index"
+        android:layout_above="@+id/comfort_index"
+        android:layout_marginLeft="26dp"
+        android:height="25dp"
+        android:width="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+<!-- 生活指数Tip end -->
+    <TextView
+        android:id="@+id/today_weather_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/today_weather_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#ffffff"
+        android:textSize="11sp"/>
+    <TextView
+        android:id="@+id/today_temperature_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/today_weather_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+        android:textSize="11sp"/>
+    <TextView
+        android:id="@+id/today_wind_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/today_temperature_info"
+        android:layout_alignBottom="@+id/G"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+        android:textSize="11sp"/>
+	
+    <TextView
+        android:id="@+id/TodayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CityName"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>    
+    
+	<ImageView
+	    android:id="@+id/home_img"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxWidth="28dp"
+        android:minWidth="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/home"
+	    />
+
+	<ImageView
+	    android:id="@+id/share_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:maxWidth="28dp"
+        android:minWidth="28dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+	    android:src="@drawable/share" />
+
+	<TextView
+        android:id="@+id/CityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@+id/microsoft_accor_black"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+	<TextView
+	    android:id="@+id/home_button_1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:maxHeight="50dp"
+	    android:maxWidth="50dp"
+	    android:minHeight="50dp"
+	    android:minWidth="50dp"
+	/>
+
+</RelativeLayout>

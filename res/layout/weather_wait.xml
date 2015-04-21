@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  
+	android:layout_width="fill_parent"  
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal|center_vertical" 
+	android:background="@layout/weather_wait_bg"   
+    >
+
+    <TextView
+        android:id="@+id/wait_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/wait_img"
+        android:layout_marginLeft="7dp"
+        android:maxHeight="35dp"
+        android:minHeight="35dp"
+        android:minWidth="70dp"
+        android:maxWidth="70dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:gravity="center_vertical|left" />
+
+    <ImageView
+        android:id="@+id/wait_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="6dp"
+        android:maxHeight="25dp"
+        android:maxWidth="25dp"
+        android:minHeight="25dp"
+        android:minWidth="25dp"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>

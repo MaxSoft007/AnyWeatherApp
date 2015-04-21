@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".GuideActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:background="#0050b1"
+        android:maxHeight="640dp"
+        android:maxWidth="360dp"
+        android:minHeight="640dp"
+        android:minWidth="360dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="103dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="基于Android平台的“任意天气”\n移动App的设计与开发"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#80FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="天津市大学软件学院2015届毕业设计作品"
+        android:textColor="#85000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="学号：1350211304"
+        android:textColor="#85FFFFFF" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView03"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:text="班级：卓越1309 "
+        android:textColor="#85FFFFFF" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:text="导师：张林福、苗序娟"
+        android:textColor="#85FFFFFF" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:text="专业：软件工程"
+        android:textColor="#85FFFFFF" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="33dp"
+        android:text="姓名：张秀秀"
+        android:textColor="#85FFFFFF" />
+
+    <ImageView
+        android:id="@+id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:src="@drawable/open" />
+
+    <TextView
+        android:id="@+id/open_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/right_button"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/open_weather_textview_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="40dp"
+        android:maxHeight="40dp"
+        android:maxWidth="160dp"
+        android:minWidth="160dp"
+        android:text="开启任意天气"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>
